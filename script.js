@@ -1,11 +1,13 @@
 // Learn With Srikanth Racharla: https://www.youtube.com/watch?v=NHNqHSoU50c&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd
 console.clear();
 
-const value = false;
-console.log(typeof value);
+// comparison operator
+// == check only value
+// === check value and type
 
-if (value) {
-    console.log('Hi');
-} else {
-    console.log('Bye');
-}
+const a = 10;
+const b = 10;
+const c = '10';
+
+console.log(a == b); // true
+console.log(b === c); // flase

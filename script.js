@@ -6,10 +6,10 @@ console.clear();
 const name = 'VedaGna';
 const age = 5;
 
-if (name == 'VedaGna' || name == 'Gnapika') {
+if (name == 'VedaGna' && name == 'Gnapika') {
     console.log('Hey!');
 } else {
     console.log('No Comments');
 }
 
-// Hey!
+// No Comments

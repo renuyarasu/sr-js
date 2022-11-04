@@ -2,13 +2,11 @@
 console.clear();
 // 1 inch = 2.54 cm
 
-function calculate(value) {
-    return value * 2.54
+const add = function (num1, num2) {
+    return num1 + num2
 }
-;
 
-const width = 0;
-const height = 0;
-const dimensions = [width, height]
-console.log(dimensions);
-console.log(calculate(10));
+const first = add(5, 10);
+const second = add(15, 20);
+
+console.log(first, second, add(100, 200));

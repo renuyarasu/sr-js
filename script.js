@@ -3,26 +3,26 @@ console.clear();
 
 // Switch
 
-const dice = 3;
+const dice = 5;
 
 if (dice === 1) {
     console.log('One');
 }
-if (dice === 2) {
+else if (dice === 2) {
     console.log('Two');
 }
-if (dice === 3) {
+else if (dice === 3) {
     console.log('Three');
 }
-if (dice === 4) {
+else if (dice === 4) {
     console.log('Four');
 }
-if (dice === 5) {
+else if (dice === 5) {
     console.log('Five');
 }
-if (dice === 6) {
+else if (dice === 6) {
     console.log('Six');
 }
-if (dice > 6 || dice < 0) {
+else {
     console.log('No Game');
 } 

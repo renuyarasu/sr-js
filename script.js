@@ -3,9 +3,9 @@ console.clear();
 
 // Loops - While Loop
 
-let amount = 10;
+let amount = 5;
 
-while (amount >= 0) {
+do {
     console.log(`I have ${amount} $`);
-    amount--;
-}
+    amount++;
+} while (amount < 10)

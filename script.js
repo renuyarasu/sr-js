@@ -5,24 +5,26 @@ console.clear();
 
 const dice = 5;
 
-if (dice === 1) {
-    console.log('One');
+switch (dice) {
+    case 1:
+        console.log('One');
+        break;
+    case 2:
+        console.log('Two');
+        break;
+    case 3:
+        console.log('Three');
+        break;
+    case 4:
+        console.log('Four');
+        break;
+    case 5:
+        console.log('Five');
+        break;
+    case 6:
+        console.log('Six');
+        break;
+
+    default:
+        console.log('No Game');
 }
-else if (dice === 2) {
-    console.log('Two');
-}
-else if (dice === 3) {
-    console.log('Three');
-}
-else if (dice === 4) {
-    console.log('Four');
-}
-else if (dice === 5) {
-    console.log('Five');
-}
-else if (dice === 6) {
-    console.log('Six');
-}
-else {
-    console.log('No Game');
-} 

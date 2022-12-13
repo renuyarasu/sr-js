@@ -3,7 +3,7 @@ console.clear();
 
 // Loops - While Loop
 
-let amount = 5;
+let amount = 25;
 
 do {
     console.log(`I have ${amount} $`);

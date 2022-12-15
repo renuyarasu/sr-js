@@ -3,10 +3,8 @@ console.clear();
 
 // Loops - While Loop
 
-let amount = 0;
+for (let i = 0; i < 10; i++) {
+    console.log(i);
 
-do {
-    console.log(`I've ${amount}$`);
-    amount++;
-} while (amount <= 10)
+}
 

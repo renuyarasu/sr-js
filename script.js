@@ -8,16 +8,32 @@ Connect with JavaScript
 • Array Iterations (map, filter, reduce, etc)
 • Global Objects (Math, Date)  */
 
-let names = ['Veda', 'Gnapika', 'Hindu'];
-let surename = 'Yarasu';
+let expenditure = [10, 20, 40, 60, 80];
+let food = [100, 200, 300];
 
-const myArray = []
-
-for (let i = 0; i < names.length; i++) {
-    console.log(i);
-    console.log(names[i]);
-    let fullname = `${names[i]} ${surename}`;
-    myArray.push(fullname)
+function calTotal(arr) {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    if (total > 100) {
+        console.log('More expenditures');
+    } else {
+        console.log('Good');
+    }
+    return total
 }
 
-console.log(myArray);
+let exTotal = calTotal(expenditure)
+let foodTotal = calTotal(food);
+let randomTotal = calTotal([1, 2, 3, 4, 5, 6, 9, 8, 7])
+
+/* console.log(exTotal);
+console.log(foodTotal);
+console.log(randomTotal); */
+
+console.log({
+    expenditure: exTotal,
+    food: foodTotal,
+    random: randomTotal
+});

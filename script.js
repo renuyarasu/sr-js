@@ -8,11 +8,14 @@ https://www.youtube.com/watch?v=yf01WKxNRXg&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3G
 // Iterate over array - no for loop required 
 // Accept CALLBACK function as an argument, calls Callback against each item in a array. Reference Item in the Callback Paramater. */
 
+const people = [
+    { name: 'Veda', age: 5, class: 'LKG' },
+    { name: 'Gnapika', age: 7, class: 'TWO' },
+    { name: 'Hindu', age: 25, class: 'Diploma' }
+]
 
-const numbers = [0, 1, 2, 3, 4, 5]
-
-// show all numbers
-
-for (let i = 0; i < numbers.length; i++) {
-    console.log(numbers[i]);
+function showPerson(person) {
+    console.log(person.name);
 }
+
+people.forEach(showPerson)

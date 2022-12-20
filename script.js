@@ -14,8 +14,12 @@ const people = [
     { name: 'Hindu', age: 25, class: 'Diploma' }
 ]
 
-function showPerson(person) {
+/* function showPerson(person) {
     console.log(person.name);
-}
+} */
 
-people.forEach(showPerson)
+// people.forEach(showPerson)
+
+people.forEach(function (person) {
+    console.log(person.name.toUpperCase());
+})

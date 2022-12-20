@@ -1,39 +1,35 @@
 // Learn With Srikanth Racharla: https://www.youtube.com/watch?v=NHNqHSoU50c&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd
 console.clear();
 /* 
-Connect with JavaScript
+https://www.youtube.com/watch?v=yf01WKxNRXg&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd&index=50
 /////////////////////// 
-• String Methods
-• Global/Local Scope
-• Array Iterations (map, filter, reduce, etc)
-• Global Objects (Math, Date)  */
+// Callback Functions, Higher Order Functions, Functions as First Class Objects/Citizens 
+// Functions are first class objects - stored in a variable (expression), passed as an argument to another function, return from the function (closure) 
+// Higher Order function - accepts another function as an argument or returns another function as a result 
+// Callback Function - passed to a another function as an argument and executedlinside that function */
 
-let expenditure = [10, 20, 40, 60, 80];
-let food = [100, 200, 300];
-
-function calTotal(arr) {
-    let total = 0;
-    for (let i = 0; i < arr.length; i++) {
-        total += arr[i];
-    }
-    if (total > 100) {
-        console.log('More expenditures');
-    } else {
-        console.log('Good');
-    }
-    return total
+/* function greet(firstname) {
+    const myName = 'VedaGna';
+    console.log(`Good Afternoon ${firstname}, I'm ${myName}`);
+}
+ */
+// Callback Function
+function morning(firstname) {
+    return `Good Morning ${firstname}`
 }
 
-let exTotal = calTotal(expenditure)
-let foodTotal = calTotal(food);
-let randomTotal = calTotal([1, 2, 3, 4, 5, 6, 9, 8, 7])
+// Callback Function
+function afternoon(firstname) {
+    return `Good Afternoon ${firstname}`
+}
 
-/* console.log(exTotal);
-console.log(foodTotal);
-console.log(randomTotal); */
+// Higher Order function
+function greet(firstname, cb) {
+    const myName = 'VedaGna';
+    console.log(`${cb(firstname)}, I'm ${myName}`);
+}
 
-console.log({
-    expenditure: exTotal,
-    food: foodTotal,
-    random: randomTotal
-});
+
+
+greet('Harry', morning)
+greet('Hindu', afternoon)

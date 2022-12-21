@@ -5,7 +5,6 @@ https://www.youtube.com/watch?v=84AhO5rHhmA&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3G
 /////////////////////// 
 // Math */
 
-const num = 625;
-const result = Math.sqrt(num)
+const result = Math.PI
 console.log(result);
 

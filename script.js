@@ -1,12 +1,12 @@
 // Learn With Srikanth Racharla: https://www.youtube.com/watch?v=NHNqHSoU50c&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd
 console.clear();
 /* 
-https://www.youtube.com/watch?v=yf01WKxNRXg&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd&index=50
+https://www.youtube.com/watch?v=84AhO5rHhmA&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd&index=53
 /////////////////////// 
-// Powerful' Array Methods 
-// forEach, map, filter, find, reduce 
-// Iterate over array - no for loop required 
-// Accept CALLBACK function as an argument, calls Callback against each item in a array. Reference Item in the Callback Paramater. */
+// map 
+// does return new array 
+// does not change the size of original array 
+// use values from original array when making new one */
 
 const people = [
     { name: 'Veda', age: 5, class: 'LKG' },
@@ -14,12 +14,16 @@ const people = [
     { name: 'Hindu', age: 25, class: 'Diploma' }
 ]
 
-/* function showPerson(person) {
-    console.log(person.name);
-} */
-
-// people.forEach(showPerson)
-
-people.forEach(function (person) {
-    console.log(person.name.toUpperCase());
+const ages = people.map(function (person) {
+    console.log(person.age);
+    return person.name
 })
+
+const newPerson = people.map(function (person) {
+    return {
+        fName: person.name,
+        myAge: person.age,
+    }
+})
+
+console.log(newPerson);

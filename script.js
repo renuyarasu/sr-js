@@ -3,27 +3,27 @@ console.clear();
 /* 
 https://www.youtube.com/watch?v=84AhO5rHhmA&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd&index=53
 /////////////////////// 
-// map 
-// does return new array 
-// does not change the size of original array 
-// use values from original array when making new one */
+// filter ()
+// does return new arrad 
+// can manipulate the size of new array 
+// returns bad on condition  */
 
 const people = [
     { name: 'Veda', age: 5, class: 'LKG' },
     { name: 'Gnapika', age: 7, class: 'TWO' },
-    { name: 'Hindu', age: 25, class: 'Diploma' }
+    { name: 'Hindu', age: 25, class: 'Diploma' },
+    { name: 'Renu', age: 35, class: 'MBA' }
 ]
 
-const ages = people.map(function (person) {
-    console.log(person.age);
-    return person.name
+const kids = people.filter(function (person) {
+    return person.age <= 10;
 })
 
-const newPerson = people.map(function (person) {
-    return {
-        fName: person.name,
-        myAge: person.age,
-    }
-})
+/* const peopleClass = people.filter(function (person) {
+    return person.class === 'LKG'
+}) */
 
-console.log(newPerson);
+const peopleClass = people.filter((person) => person.class === 'LKG')
+
+console.log(kids);
+console.log(peopleClass);

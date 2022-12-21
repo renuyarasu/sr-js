@@ -6,6 +6,6 @@ https://www.youtube.com/watch?v=84AhO5rHhmA&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3G
 // Math */
 
 const num = 7.356;
-const result = Math.ceil(num)
+const result = Math.random(num)
 console.log(result);
 

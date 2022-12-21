@@ -3,27 +3,20 @@ console.clear();
 /* 
 https://www.youtube.com/watch?v=84AhO5rHhmA&list=PLkusOHO_VvuC5im0DL62_FXPHdfE3GWjd&index=53
 /////////////////////// 
-// filter ()
-// does return new arrad 
-// can manipulate the size of new array 
-// returns bad on condition  */
+// find ()
+// return single instance - (in this case object) 
+// return first match, if no match undefined
+// great for getting unique value  */
 
 const people = [
-    { name: 'Veda', age: 5, class: 'LKG' },
-    { name: 'Gnapika', age: 7, class: 'TWO' },
-    { name: 'Hindu', age: 25, class: 'Diploma' },
-    { name: 'Renu', age: 35, class: 'MBA' }
+    { name: 'Veda', age: 5, class: 'LKG', id: 1 },
+    { name: 'Gnapika', age: 7, class: 'TWO', id: 2 },
+    { name: 'Hindu', age: 25, class: 'Diploma', id: 3 },
+    { name: 'Renu', age: 35, class: 'MBA', id: 4 },
 ]
 
-const kids = people.filter(function (person) {
-    return person.age <= 10;
-})
+const findPerson = people.find((person) => person.id === 4);
+console.log(findPerson);
 
-/* const peopleClass = people.filter(function (person) {
-    return person.class === 'LKG'
-}) */
-
-const peopleClass = people.filter((person) => person.class === 'LKG')
-
-console.log(kids);
-console.log(peopleClass);
+const findPerson2 = people.filter((person) => person.id === 4);
+console.log(findPerson2[0]);
